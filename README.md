@@ -1,5 +1,4 @@
-# Praktikum 1
-
+## Percobaan 1
 1.  Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method? Jelaskan!
 2. Apa yang dilakukan oleh kode program berikut?
 ```Mahasiswa[] arrayOfMahasiswa = new Mahasiswa[3];```
@@ -19,3 +18,10 @@ arrayOfMahasiswa[0].ipk = (float) 3.75;
 3. CLass Mahasiswa tidak memiliki konstruktor. Namun tetapi bisa dipanggil karena program telah memiliki default constructor.
 4. Kode tersebut membuat object Mahasiswa pada index ke-0. Setelah itu mengisi atribut diantara lain nim, nama, kelas, ipk.
 5. menggunakan PBO (Pemrograman Berorientasi Objek). Sehingga class Mahasiswa sebagai model data, sedangkan class MahasiswaDemo sebagai class yang menjalankan program.
+
+## Percobaan 2
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3.
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+### Jawaban: 
+1. Sudah saya modifikasi.
+2. Kode tersebut error karena objet pada index ke-0 belum dibuT. Array hanya membuat wadah, bukan object dari array. Sehingga harus memanggil ```new Mahasiswa()``` terlebih dahulu agar tidak terjadi NUllPointerException.
