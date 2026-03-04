@@ -1,14 +1,15 @@
 import java.util.Scanner;
+
 public class MahasiswaDemo10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Mahasiswa10[] arrayOfMahasiswa = new Mahasiswa10[3];
         String dummy;
 
-        for (int i =0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             arrayOfMahasiswa[i] = new Mahasiswa10();
 
-            System.out.println("Masukkan Data Mahasiswa ke-"+ (i+1));
+            System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
             System.out.print("NIM   : ");
             arrayOfMahasiswa[i].nim = sc.nextLine();
             System.out.print("Nama  : ");
@@ -20,13 +21,9 @@ public class MahasiswaDemo10 {
             arrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
             System.out.println("----------------------------");
         }
-        for (int i=0; i < 3; i++) {
-            System.out.println("Data Mahasiswa ke-"+(i+1));
-            System.out.println("NIM     : "+ arrayOfMahasiswa[i].nim);
-            System.out.println("Nama    : "+arrayOfMahasiswa[i].nama);
-            System.out.println("Kelas   : "+arrayOfMahasiswa[i].kelas);
-            System.out.println("IPK     : "+arrayOfMahasiswa[i].ipk);
-            System.out.println("------------------------------");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Mahasiswa ke-" + (i + 1));
+            arrayOfMahasiswa[i].cetakInfo();
         }
     }
 }
