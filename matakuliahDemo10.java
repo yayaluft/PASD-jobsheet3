@@ -22,7 +22,7 @@ public class matakuliahDemo10 {
             System.out.println("------------------");
 
             arrayOfMatakuliah[i] = new matakuliah10(kode, nama, sks, jumlahJam);
-
+            arrayOfMatakuliah[i].tambahData(kode, nama, sks, jumlahJam);
         }
     }
 }
