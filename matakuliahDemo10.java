@@ -3,11 +3,16 @@ import java.util.Scanner;
 public class matakuliahDemo10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        matakuliah10[] arrayOfMatakuliah = new matakuliah10[3];
         String kode, nama, dummy;
         int sks, jumlahJam;
+    
+        System.out.print("Masukkan jumlah Matakuliah: ");
+        int n = sc.nextInt();
+        System.out.println("--------------------");
+        sc.nextLine();
 
-        for (int i = 0; i < 3; i++) {
+        matakuliah10[] arrayOfMatakuliah = new matakuliah10[n];
+        for (int i = 0; i < arrayOfMatakuliah.length; i++) {
             System.out.println("Masukkan Data MataKuliah ke-" + (i + 1));
             System.out.print("Kode      : ");
             kode = sc.nextLine();
