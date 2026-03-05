@@ -25,3 +25,15 @@ arrayOfMahasiswa[0].ipk = (float) 3.75;
 ### Jawaban: 
 1. Sudah saya modifikasi.
 2. Kode tersebut error karena objet pada index ke-0 belum dibuT. Array hanya membuat wadah, bukan object dari array. Sehingga harus memanggil ```new Mahasiswa()``` terlebih dahulu agar tidak terjadi NUllPointerException.
+
+## Percobaan 3
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+
+### Jawaban:
+1. Ya, suatu class dapat memiliki lebih dari 1 comstructor. Contohnya pada class matakuliah10 terdapat dua constructor, yaitu constructor tanpa parameter dan constructor dengan parameter.
+2. Sudah saya modifikasi.
+3. Sudah saya modifikasi.
+4. Sudah saya modifikasi.
