@@ -25,7 +25,13 @@ public class DosenDemo10 {
             sc.nextLine();
             System.out.println("---------------------------");
         }
-        for (Dosen10 d : arrayOfDosen) {
+      
+        DataDosen10 dataDosen = new DataDosen10();
+        dataDosen.dataSemuaDosen(arrayOfDosen);
+        dataDosen.jmlhDosenJenisKelamin(arrayOfDosen);
+        dataDosen.rataUsiaDosenJenisKelamin(arrayOfDosen);
+        dataDosen.dosenTua(arrayOfDosen);
+        dataDosen.dosenMuda(arrayOfDosen);  for (Dosen10 d : arrayOfDosen) {
             int i = 0;
             System.out.println("Data Dosen ke-" + (i + 1));
             arrayOfDosen[i].CetakInfo();
